@@ -14,6 +14,10 @@ class Vehicle {
     var modelYear = 0
     var powerSource = "null"
     var numberOfWheels = 0
+    // MARK: - Computed  Properties
+    var vehicleTitle: String {
+        return String(format:"%d %@ %@", modelYear, brandName, modelName)
+    }
     
     func goForward() -> String {
         return "null"

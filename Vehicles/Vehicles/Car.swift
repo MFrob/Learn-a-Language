@@ -18,4 +18,26 @@ class Car : Vehicle {
         super.init()
         numberOfWheels = 4
     }
+    
+    // MARK: - Private method implementations
+    private func start() -> String {
+        return String(format: "Start power source %@.", powerSource)
+    }
+    
+    // MARK: - Superclass Overrides
+    override func goForward() -> String {
+        return String(format: "%@ %@ Then depress gas pedal.", start(), changeGears("Forward"))
+    }
+    
+    override func goBackward() -> String {
+        return String(format: "%@ %@ Check your rear view mirror. Then depress gas pedal.", start(), changeGears("Reverse"))
+    }
+    
+    override func stopMoving() -> String {
+        return String(format: "Depress brake pedal. %@", changeGears("Park"))
+    }
+    
+    override func makeNoise() -> String {
+        return "Beep beep!"
+    }
 }

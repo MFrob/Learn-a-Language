@@ -14,10 +14,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        var vehicle = Vehicle()
+        let vehicle = Vehicle()
         // Test methods with implementations
         print("Vehicle turn: \(vehicle.turn(700))")
-        var changeGearResult = vehicle.changeGears("Test")
+        let changeGearResult = vehicle.changeGears("Test")
         print("Vehicle change gears: \(changeGearResult)")
         
         // Test methods without implementations
