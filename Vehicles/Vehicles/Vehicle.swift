@@ -18,6 +18,15 @@ class Vehicle {
     var vehicleTitle: String {
         return String(format:"%d %@ %@", modelYear, brandName, modelName)
     }
+    var vehicleDetails: String {
+        var details = "Basic vehicle details:\n\n"
+        details += "Brand name: \(brandName)\n"
+        details += "Model name: \(modelName)\n"
+        details += "Model year: \(modelYear)\n"
+        details += "Power source: \(powerSource)\n"
+        details += "# of wheels: \(numberOfWheels)\n"
+        return details
+    }
     
     func goForward() -> String {
         return "null"

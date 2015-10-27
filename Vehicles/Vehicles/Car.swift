@@ -13,6 +13,34 @@ class Car : Vehicle {
     var isHatchback:Bool = false
     var hasSunroof:Bool = false
     var numberOfDoors:Int = 0
+    override var vehicleDetails: String {
+        // Get basic details from superclass
+        let basicDetails = super.vehicleDetails
+        
+        // Initialize mutable string
+        var carDetailsBuilder = "\n\nCar-Specific Details:\n\n"
+        
+        // String helpers for booleans
+        let yes = "Yes\n"
+        let no = "No\n"
+        
+        // Add info about car-specific features.
+        carDetailsBuilder += "Has sunroof: "
+        carDetailsBuilder += hasSunroof ? yes : no
+        
+        carDetailsBuilder += "Is Hatchback: "
+        carDetailsBuilder += isHatchback ? yes : no
+        
+        carDetailsBuilder += "Is Convertible: "
+        carDetailsBuilder += isConvertible ? yes : no
+        
+        carDetailsBuilder += "Number of doors: \(numberOfDoors)"
+        
+        // Create the final string by combining basic and car-specific details.
+        let carDetails = basicDetails + carDetailsBuilder
+        
+        return carDetails
+    }
     
     override init() {
         super.init()
