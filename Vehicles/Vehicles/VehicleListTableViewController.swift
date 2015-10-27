@@ -65,6 +65,50 @@ class VehicleListTableViewController: UITableViewController {
         // Add it to the array.
         vehicles.append(prius)
         
+        // Create a motorcycle
+        var harley = Motorcycle()
+        harley.brandName = "Harley-Davidson"
+        harley.modelName = "Softail"
+        harley.modelYear = 1979
+        harley.engineNoise = "Vrrrrrrrroooooooooom!"
+        
+        // Add it to the array.
+        vehicles.append(harley)
+        
+        // Create another motorcycle
+        var kawasaki = Motorcycle()
+        kawasaki.brandName = "Kawasaki"
+        kawasaki.modelName = "Ninja"
+        kawasaki.modelYear = 2005
+        kawasaki.engineNoise = "Neeeeeeeeeeeeeeeeow!"
+        
+        // Add it to the array
+        self.vehicles.append(kawasaki)
+        
+        // Create a truck
+        var silverado = Truck()
+        silverado.brandName = "Chevrolet"
+        silverado.modelName = "Silverado"
+        silverado.modelYear = 2011
+        silverado.numberOfWheels = 4
+        silverado.cargoCapacityCubicFeet = 53
+        silverado.powerSource = "gas engine"
+        
+        // Add it to the array
+        vehicles.append(silverado)
+        
+        // Create another truck
+        var eighteenWheeler = Truck()
+        eighteenWheeler.brandName = "Peterbilt"
+        eighteenWheeler.modelName = "579"
+        eighteenWheeler.modelYear = 2013
+        eighteenWheeler.numberOfWheels = 18
+        eighteenWheeler.cargoCapacityCubicFeet = 408
+        eighteenWheeler.powerSource = "diesel engine"
+        
+        // Add it to the array
+        vehicles.append(eighteenWheeler)
+        
         // Sort the array by the model year
         vehicles.sort { $0.modelYear < $1.modelYear }
     }

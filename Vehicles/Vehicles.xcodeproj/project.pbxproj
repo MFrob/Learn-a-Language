@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		52BC33A51BDFB01300AFCAF1 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BC33A41BDFB01300AFCAF1 /* Car.swift */; };
 		52BC33A71BDFCC9E00AFCAF1 /* Motorcycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BC33A61BDFCC9E00AFCAF1 /* Motorcycle.swift */; };
+		52BC33A91BDFCF3100AFCAF1 /* Truck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BC33A81BDFCF3100AFCAF1 /* Truck.swift */; };
 		5DC89C6419BE274D00A75324 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC89C6319BE274D00A75324 /* AppDelegate.swift */; };
 		5DC89C6619BE274D00A75324 /* VehicleListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC89C6519BE274D00A75324 /* VehicleListTableViewController.swift */; };
 		5DC89C6819BE274D00A75324 /* VehicleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC89C6719BE274D00A75324 /* VehicleDetailViewController.swift */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		52BC33A41BDFB01300AFCAF1 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		52BC33A61BDFCC9E00AFCAF1 /* Motorcycle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Motorcycle.swift; sourceTree = "<group>"; };
+		52BC33A81BDFCF3100AFCAF1 /* Truck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Truck.swift; sourceTree = "<group>"; };
 		5DC89C5E19BE274D00A75324 /* Vehicles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vehicles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DC89C6219BE274D00A75324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DC89C6319BE274D00A75324 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				5DC89C6319BE274D00A75324 /* AppDelegate.swift */,
 				52BC33A41BDFB01300AFCAF1 /* Car.swift */,
 				5DC89C6519BE274D00A75324 /* VehicleListTableViewController.swift */,
+				52BC33A81BDFCF3100AFCAF1 /* Truck.swift */,
 				5DC89C8219BE289D00A75324 /* Vehicle.swift */,
 				5DC89C6719BE274D00A75324 /* VehicleDetailViewController.swift */,
 				52BC33A61BDFCC9E00AFCAF1 /* Motorcycle.swift */,
@@ -227,6 +230,7 @@
 				5DC89C6619BE274D00A75324 /* VehicleListTableViewController.swift in Sources */,
 				52BC33A71BDFCC9E00AFCAF1 /* Motorcycle.swift in Sources */,
 				5DC89C6419BE274D00A75324 /* AppDelegate.swift in Sources */,
+				52BC33A91BDFCF3100AFCAF1 /* Truck.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
