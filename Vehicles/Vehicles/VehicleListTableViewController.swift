@@ -20,7 +20,7 @@ class VehicleListTableViewController: UITableViewController {
   
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     if segue.identifier == "showDetail" {
-      if let indexPath = self.tableView.indexPathForSelectedRow() {
+      if let indexPath = self.tableView.indexPathForSelectedRow {
         let vehicle = vehicles[indexPath.row]
         (segue.destinationViewController as! VehicleDetailViewController).detailVehicle = vehicle
       }
