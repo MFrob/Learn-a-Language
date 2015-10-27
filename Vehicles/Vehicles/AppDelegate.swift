@@ -13,9 +13,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   var window: UIWindow?
   
-  
-  func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-    // Override point for customization after application launch.
+  func application(application: UIApplication,
+    didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    
+    let vehicle = Vehicle()
+    // Test methods with implementations
+    print("Vehicle turn: \(vehicle.turn(700))")
+    
+    let changeGearResult = vehicle.changeGears("Test")
+    print("Vehicle change gears: \(changeGearResult)")
+    
+    // Test methods without implementations
+    print("Vehicle make noise: \(vehicle.makeNoise())")
+    print("Vehicle go forward: \(vehicle.goForward())")
+    print("Vehicle go backward: \(vehicle.goBackward())")
+    print("Vehicle stop moving: \(vehicle.stopMoving())")
+
     return true
   }
   
